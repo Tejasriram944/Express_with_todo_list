@@ -10,9 +10,9 @@ connectDB();
 // Init middleWare
 app.use(express.json({ extended: false }));
 
-app.get('/', (req, res) =>
-  res.json({ msg: 'hello world connecting to the react Api...' })
-);
+// app.get('/', (req, res) =>
+//   res.json({ msg: 'hello world connecting to the react Api...' })
+// );
 
 // routers
 app.use('/api/users', require('./routes/users'));

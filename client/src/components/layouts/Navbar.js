@@ -1,5 +1,6 @@
 import React from 'react';
 import PropType from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ title, icon }) => {
   return (
@@ -7,6 +8,14 @@ const Navbar = ({ title, icon }) => {
       <h2>
         <i className={icon} /> {title}
       </h2>
+      <ul>
+        <li>
+          <Link to='/'>home</Link>
+        </li>
+        <li>
+          <Link to='/about'>about</Link>
+        </li>
+      </ul>
     </div>
   );
 };
