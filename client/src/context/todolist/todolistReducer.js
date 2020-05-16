@@ -1,10 +1,4 @@
-import {
-  ADD_TODOLIST,
-  DELETE_TODOLIST,
-  SET_CURRENT,
-  CLEAR_TODOLIST,
-  UPDATE_TODOLIST,
-} from '../types';
+import { ADD_TODOLIST } from '../types';
 
 export default (state, action) => {
   switch (action.type) {

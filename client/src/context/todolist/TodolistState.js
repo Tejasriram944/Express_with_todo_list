@@ -2,13 +2,7 @@ import React, { useReducer } from 'react';
 import uuid from 'uuid/dist/v4';
 import TodolistContext from './todolistContext';
 import todolistReducer from './todolistReducer';
-import {
-  ADD_TODOLIST,
-  DELETE_TODOLIST,
-  SET_CURRENT,
-  CLEAR_TODOLIST,
-  UPDATE_TODOLIST,
-} from '../types';
+import { ADD_TODOLIST } from '../types';
 
 const TodolistState = (props) => {
   const initialState = {
@@ -41,19 +35,11 @@ const TodolistState = (props) => {
     dispatch({ type: ADD_TODOLIST, payload: todolist });
   };
 
-  // Delete List
-
-  // Set List
-
-  // Clear Current List
-
-  // Update List
-
   return (
     <TodolistContext.Provider
       value={{
         todolists: state.todolists,
-        // addTask,
+        addTask,
       }}
     >
       {props.children}
